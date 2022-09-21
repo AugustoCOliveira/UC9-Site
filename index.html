@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Game Mania</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/69e587e431.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <header class="">
+      <a href="#" class="logo">
+        <img src="img/Logo gamemania recortada.png" alt="" />
+      </a>
+
+      <nav class="menu">
+        <a href="#">Catalogo </a>
+        <a href="">Inicio </a>
+        <a href="#">Suporte </a>
+
+        <div class="searchbar">
+          <input type="text" placeholder="Pesquisar" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="button-holder">
+        <a href="./login/index.html" class="login-button">
+          <i class="fas fa-user"></i>
+          <span>Login</span>
+        </a>
+        <button class="cart-button">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </header> -->
+
+    <nav class="navbar navbar-expand-md bg-light fixed-top">
+      <div class="container-fluid">
+        <a href="#" class="logo navbar-brand">
+          <img src="img/Logo gamemania recortada.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mx-4 mb-lg-0">
+            <li class="nav-item menu-text">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item menu-text">
+              <a class="nav-link" href="#">SOBRE NOS</a>
+            </li>
+            <li class="nav-item menu-text">
+              <a class="nav-link" href="#">SUPORTE</a>
+            </li>
+          </ul>
+          <div class="searchbar flex-shrink">
+            <input type="text" placeholder="Pesquisar" />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="button-holder mx-4">
+            <a href="./login/index.html" class="login-button">
+              <i class="fas fa-user"></i>
+              <span>Login</span>
+            </a>
+            <button class="cart-button">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="banner"></div>
+
+      <h2 class="section-title">Produtos mais vendidos</h2>
+      <section class="most-wanted">
+        <button id="product-button-left" class="arrow-button">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div id="row" class="product-row">
+          <div class="product-card">
+            <img src="./img/fone1.jpg" alt="" />
+            <b class="product-name">HyperY Cold</b>
+            <p class="product-price">R$ 300,00</p>
+            <p class="product-parcel">Em até 6 vezes sem juros</p>
+          </div>
+
+          <div class="product-card">
+            <img src="./img/mouse1.jpg" />
+            <b class="product-name">Bluedragon Hive 1600 dpi</b>
+            <p class="product-price">R$ 500,00</p>
+            <p class="product-parcel">Em até 12 vezes sem juros</p>
+          </div>
+
+          <div class="product-card">
+            <img src="./img/playl1.jpg" alt="" />
+            <b class="product-name">Gamestation 5 1TB</b>
+            <p class="product-price">R$ 8.000,00</p>
+            <p class="product-parcel">Em até 12 vezes sem juros</p>
+          </div>
+
+          <div class="product-card">
+            <img src="./img/placa1.jpg" alt="" />
+            <b class="product-name">Bazooka RTZ 3060 TI</b>
+            <p class="product-price">R$ 6.000,00</p>
+            <p class="product-parcel">Em até 12 vezes sem juros</p>
+          </div>
+
+          <div class="product-card">
+            <img src="./img/teclado1.jpg" alt="" />
+            <b class="product-name">HyperY Yaoll Ogirins 2042</b>
+            <p class="product-price">R$ 1.000,00</p>
+            <p class="product-parcel">Em até 10 vezes sem juros</p>
+          </div>
+        </div>
+
+        <button id="product-button-right" class="arrow-button">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="about">
+        <h4>Sobre nós</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+          nostrum! Magnam molestiae, iste, ipsum possimus, quibusdam ab at quo
+          hic tempore quas ipsa ipsam sunt culpa atque ea velit architecto.
+        </p>
+      </div>
+      <img src="img/Logo gamemania recortada.png" alt="" />
+      <div class="politics">
+        <h4>Políticas</h4>
+        <ul>
+          <li>foobar</li>
+          <li>foobar</li>
+          <li>foobar</li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <i class="fab fa-whatsapp"></i>
+            (61) *****-****
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+            @Game.Mania
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i>
+            @Game.Mania
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/index.js" async defer></script>
+  </body>
+</html>
